@@ -1,4 +1,3 @@
-
 /*css for small screen*/
 
 body {
@@ -13,7 +12,7 @@ body {
 
 
 h2 {
-    
+
     background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
     font-size: 25px;
     -webkit-background-clip: text;
@@ -21,8 +20,20 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.lets_code {
+    font-family: monospace;
+    font-size: 20px;
+}
+
 /***css for big screen***/
 
-@media  {
-    
+@media only screen and (min-width: 800px) {
+  h2{
+    font-size:50px ;
+  }
+  
+    .lets_code {
+        font-family: monospace;
+        font-size: 35px;
+    } 
 }
