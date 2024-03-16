@@ -5,6 +5,7 @@ body {
     margin: 0;
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -12,7 +13,7 @@ body {
 
 
 h2 {
-
+    
     background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
     font-size: 25px;
     -webkit-background-clip: text;
