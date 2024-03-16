@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
 }
 
 
@@ -28,7 +28,10 @@ h2 {
 /***css for big screen***/
 
 @media only screen and (min-width: 800px) {
-  h2{
+ body{
+    height: 100vh;
+ }
+    h2{
     font-size:50px ;
   }
   
