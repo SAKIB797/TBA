@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 95vh;
-    background-image: url();
+    background-image: url(img/);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -43,4 +43,22 @@ h2 {
         font-family: monospace;
         font-size: 35px;
     } 
+}
+
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: red;
+    bottom: 0;
+    color: white;
+    font-size: large;
+    overflow: hidden;
+}
+footer p{
+    margin: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
