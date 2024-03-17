@@ -7,12 +7,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95vh;
-    background-image: url(img/);
+    height: 100vh;
+    background-clip: content-box; /* Clip the background to the content box */
+    background-size: 80% 50%; 
+    background-position:left bottom;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(img/bg.png);
+    
 }
+
 
 
 h2 {
@@ -34,6 +37,9 @@ h2 {
 @media only screen and (min-width: 800px) {
  body{
     height: 100vh;
+    background-size: 60% 80%; 
+    background-position: left bottom;
+
  }
     h2{
     font-size:50px ;
