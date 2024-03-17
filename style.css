@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
     background-clip: content-box; /* Clip the background to the content box */
     background-size: 80% 50%; 
     background-position:left bottom;
