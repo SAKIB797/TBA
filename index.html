@@ -10,22 +10,29 @@
 </head>
 
 <body>
-    <div id="contentContainer"></div>
-    <h2>TechBytes Academy <br>
+    <div id="nav"></div>
+    <h2>TechBytes Academy<br>
         <span class="lets_code">Let`s Code_</span>
     </h2>
-<!-- <footer><p>This website is under construction</p></footer> -->
+    <!-- <footer><p>This website is under construction</p></footer> -->
+
     <script>
-        // Fetch header.html and insert its content into the contentContainer div
         fetch('page/header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('contentContainer').innerHTML = html;
-
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
             })
-            .catch(error => console.error('Error loading content:', error));
-
+            .then(html => {
+                document.getElementById('nav').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error fetching header:', error);
+                // Handle the error here, e.g., display an error message to the user
+            });
     </script>
+
 </body>
 
 </html>
